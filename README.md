@@ -21,7 +21,7 @@ This tutorial goes over how to use Qiime2 to process data from a high-throughput
 * `emp-single-end-sequences/` contains the sequences and barcodes file (*.fastq.gz).
 * `sample-metadata.tsv` contains metadata (subject info, barcode, body site, etc)
 * `submitter.sh` is the script we're going to submit to SGE
-* ``
+
 # Submitting to the Proteus cluster
 
 You need to make sure you change from your group to the courses group before you submit your job to the queuing system. This is true for any job that you run. Once you have changed your group, run: 

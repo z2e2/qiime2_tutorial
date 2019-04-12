@@ -81,7 +81,7 @@ qiime diversity beta-group-significance \
   --m-metadata-column BodySite \
   --o-visualization core-metrics-results/unweighted-unifrac-body-site-significance.qzv \
   --p-pairwise
-
+# result 2
 qiime diversity beta-group-significance \
   --i-distance-matrix core-metrics-results/unweighted_unifrac_distance_matrix.qza \
   --m-metadata-file sample-metadata.tsv \
