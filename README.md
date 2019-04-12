@@ -37,15 +37,39 @@ Use the `qstat` command to check the status of the job. SGE produces two files, 
 [zz374@proteusi01 qiime2_tutorial]$ qstat
 job-ID  prior   name       user         state submit/start at     queue                          jclass                         slots ja-task-ID 
 ------------------------------------------------------------------------------------------------------------------------------------------------
- 550147 0.90000 submitter. zz374        r     4/16/2019 12:30:00 all.q@ac01n02.cm.cluster                                          1        
+ 530147 0.00500 submitter. zz374        r     4/16/2019 12:30:00 all.q@ic22n03.cm.cluster                                          1        
 ```
 
 where the `r` lets us know the code is running. 
 
-You can check the file contents for any errors or things that would have normally been dumped to the standard output. Check the `output/` folder for the contents of the Qiime output being executed in `submitter.sh` 
+You can check the file contents for any errors or things that would have normally been dumped to the standard output. Check the `core-metrics-results/` folder for more contents of the Qiime output being executed in `submitter.sh` 
 
 ```bash
-
+[zz374@proteusa01 qiime2_tutorial]$ ls -hl core-metrics-results/
+total 6.6M
+-rw-r--r-- 1 zz374 rosenclassGrp  55K Apr 12 16:15 bray_curtis_distance_matrix.qza
+-rw-r--r-- 1 zz374 rosenclassGrp 776K Apr 12 16:15 bray-curtis-emperor-DaysSinceExperimentStart.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp 776K Apr 12 16:15 bray_curtis_emperor.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp  65K Apr 12 16:15 bray_curtis_pcoa_results.qza
+-rw-r--r-- 1 zz374 rosenclassGrp 314K Apr 12 16:15 evenness-group-significance.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp  52K Apr 12 16:15 evenness_vector.qza
+-rw-r--r-- 1 zz374 rosenclassGrp 315K Apr 12 16:15 faith-pd-group-significance.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp  52K Apr 12 16:15 faith_pd_vector.qza
+-rw-r--r-- 1 zz374 rosenclassGrp  56K Apr 12 16:15 jaccard_distance_matrix.qza
+-rw-r--r-- 1 zz374 rosenclassGrp 776K Apr 12 16:15 jaccard_emperor.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp  66K Apr 12 16:15 jaccard_pcoa_results.qza
+-rw-r--r-- 1 zz374 rosenclassGrp  52K Apr 12 16:15 observed_otus_vector.qza
+-rw-r--r-- 1 zz374 rosenclassGrp  77K Apr 12 16:15 rarefied_table.qza
+-rw-r--r-- 1 zz374 rosenclassGrp  52K Apr 12 16:15 shannon_vector.qza
+-rw-r--r-- 1 zz374 rosenclassGrp 355K Apr 12 16:15 unweighted-unifrac-body-site-significance.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp  58K Apr 12 16:15 unweighted_unifrac_distance_matrix.qza
+-rw-r--r-- 1 zz374 rosenclassGrp 777K Apr 12 16:15 unweighted-unifrac-emperor-DaysSinceExperimentStart.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp 777K Apr 12 16:15 unweighted_unifrac_emperor.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp  66K Apr 12 16:15 unweighted_unifrac_pcoa_results.qza
+-rw-r--r-- 1 zz374 rosenclassGrp 289K Apr 12 16:15 unweighted-unifrac-subject-group-significance.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp  58K Apr 12 16:15 weighted_unifrac_distance_matrix.qza
+-rw-r--r-- 1 zz374 rosenclassGrp 777K Apr 12 16:15 weighted_unifrac_emperor.qzv
+-rw-r--r-- 1 zz374 rosenclassGrp  63K Apr 12 16:15 weighted_unifrac_pcoa_results.qza
 ```
 
 # Acknowledgements
