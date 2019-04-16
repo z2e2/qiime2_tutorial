@@ -19,8 +19,7 @@ module load qiime2/2018.8.0
 
 . $CONDA_HOME/etc/profile.d/conda.sh
 conda activate qiime2-2018.8
-# required before run any qiime command
-export TZ=America/New_York
+
 # load sequences
 qiime tools import --type EMPSingleEndSequences --input-path emp-single-end-sequences --output-path emp-single-end-sequences.qza
 # demultiplexing
