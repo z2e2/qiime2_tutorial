@@ -6,7 +6,7 @@
 #$ -P rosenclassPrj
 #$ -l h_vmem=8G
 #$ -l mem_free=6G
-#$ -q all.q@@intelhosts
+#$ -q all.q
 
 # boiler plate stuff here! set up the environment at we need to do our
 # computation
